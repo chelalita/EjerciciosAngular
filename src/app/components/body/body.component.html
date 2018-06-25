@@ -1,0 +1,56 @@
+<div class="row">
+
+
+  <div class="col">
+     <h1>*ngIf</h1>
+
+    <div *ngIf="mostrar" class="card text-white bg-primary mb-3 w-100">
+      <div class="card-body">
+        <h5 class="card-title">Autor: {{frase.autor}}</h5>
+        <p class="card-text">Mensaje: {{frase.mensaje}}</p>
+      </div>
+    </div>
+
+    <button (click)="mostrar=!mostrar" type="button" class="btn btn-outline-primary btn-block">
+      Mostrar/Ocultar
+    </button>
+  </div>
+
+
+  <div class="col">
+    <h1>*ngFor</h1>
+    <hr>
+    <ul class="list-group">
+      <li *ngFor="let personaje of personajes; let i = index" class="list-group-item"> {{i+1}} : {{personaje}} </li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col mt-4">
+    <h1>ngClass & ngModel</h1>
+    <hr>
+    <div class="well">
+      <input class="form-control" placeholder="Todo" #todotext required><br>
+      <button class="btn btn-block btn-success" (click)="addTodo(todotext)">Agregar</button>
+      <button (click)="clearCompleted()" type="button" class="btn  btn-block btn-info">
+        Limpiar
+      </button>
+      <ul>
+        <li *ngFor="let todo of todos">
+          <input type="checkbox" name="done" ngModel (click)="{ 'done': todo.done = true }">
+          <span [ngClass]="{'done': todo.done}">{{ todo.title }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="col mt-4">
+    <h1>Button</h1>
+    <hr>
+    <app-fb-button></app-fb-button>
+  </div>
+
+</div>

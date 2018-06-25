@@ -1,0 +1,16 @@
+.bg-button{
+  background: #3B5998;
+}
+
+.btn-facebook{
+  font-size: 14px;
+  color: white;
+  padding: 8px 12px;
+  width: 100px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.btn-liked{
+  background: #3e6daf;
+}
