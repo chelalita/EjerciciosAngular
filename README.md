@@ -9,3 +9,4 @@ Uso de routerLinkActive.
 Uso de routerLink.
 Diferencia entre el uso de contructor y ngOnInit.
 Uso de Variables opcionales con "?".
+- 3. 03-pipes: Difentes tipos de pipes y su uso
