@@ -66,7 +66,60 @@
           <td> {{ a | percent:'2.2-2' }} </td>
         </tr>
 
+        <tr>
+            <td> {{ salario }} </td>
+            <td> currency </td>
+            <td> {{ salario | currency }} </td>
+        </tr>
 
+        <tr>
+            <td> {{ salario }} </td>
+            <td> currency:'EUR' </td>
+            <td> {{ salario | currency:'EUR' }} </td>
+        </tr>
+
+        <tr>
+            <td> {{ salario }} </td>
+            <td> currency:'EUR':true </td>
+            <td> {{ salario | currency:'EUR':true }} </td>
+        </tr>
+
+        <tr>
+            <td> {{ salario }} </td>
+            <td> currency:'EUR':true:'4.0-0' </td>
+            <td> {{ salario | currency:'EUR':true:'4.0-0' }} </td>
+        </tr>
+
+        <tr>
+            <td> {{ salario }} </td>
+            <td> number:'.2-2' </td>
+            <td> {{ salario | number:'.2-2' }} </td>
+        </tr>
+
+
+        <tr>
+            <td> {{ valorDePromesa }} </td>
+            <td> async </td>
+            <td> {{ valorDePromesa | async }} </td>
+        </tr>
+
+        <tr>
+            <td> {{ fecha }} </td>
+            <td> date </td>
+            <td> {{ fecha | date }} </td>
+        </tr>
+
+        <tr>
+            <td> {{ fecha }} </td>
+            <td> date:'medium' </td>
+            <td> {{ fecha | date:'medium' }} </td>
+        </tr>
+
+        <tr>
+            <td> {{ fecha }} </td>
+            <td> date:'MMMM - dd' </td>
+            <td> {{ fecha | date:'MMMM - dd' }} </td>
+        </tr>
 
     </tbody>
   </table>
@@ -77,5 +130,8 @@
       {{item}}
     </li>
   </ul>
+
+    <h4>JSON</h4>
+    <pre> {{heroe | json}}</pre>
 
 </div>
