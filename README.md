@@ -15,3 +15,10 @@ Consumir servicios usando GET.
 Observables usando map from rxjs, Pipes de Domseguro.
 Route para navegacion de paginas.
 Routing de las pantallas del proyecto.
+- 5. 05-Deseos: Pequeño proyecto realizado con el framework de Ionic y Angular.
+Uso de Inputs.
+Localstorage.
+Pipes.
+Modelos.
+Componentes.
+NavController, AlerController, NavParams.
