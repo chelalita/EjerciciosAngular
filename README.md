@@ -21,4 +21,4 @@ Localstorage.
 Pipes.
 Modelos.
 Componentes.
-NavController, AlerController, NavParams.
+NavController, AlertController, NavParams.
